@@ -1,0 +1,34 @@
+import wollok.game.*
+import snake.*
+
+program SnakeGame{
+
+
+    // CONFIG
+      game.title("Snake 1")
+      game.height(50)
+      game.width(50)
+      game.ground("fondo1.png")
+
+    // VISUALES
+      snake.visualSnake()
+      game.addVisual(manzana)
+
+
+//  game.whenCollideDo(pepita, { comida => pepita.comer(comida) })
+
+    // TECLADO
+    game.onCollideDo(snake,{manzana => snake.aumentarLongitud()
+                                       manzana.posicionRandom(snake)})
+
+      keyboard.up().onPressDo({snake.move(snake.position().up(1))})
+      keyboard.down().onPressDo({snake.move(snake.position().down(1))})
+      keyboard.left().onPressDo({snake.move(snake.position().left(1))})
+      keyboard.right().onPressDo({snake.move(snake.position().right(1))})
+
+      keyboard.b().onPressDo({snake.aumentarLongitud()})
+      keyboard.c().onPressDo({manzana.posicionRandom(snake)})
+
+      game.start()
+
+    }
