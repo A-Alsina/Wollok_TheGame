@@ -31,13 +31,13 @@ var longitud = 1
  
 
     method aumentarLongitud(){
-    // Obtenemos la posición del *último* segmento actual.
+
     var posUltimoSegmento = cola.last().position()
     
-    // Creamos el nuevo segmento EN ESA MISMA POSICIÓN.
+
     var nuevaCola = new Cola (position = posUltimoSegmento)
     
-    // Lo agregamos a la lista y al juego.
+
     cola.add(nuevaCola)
     game.addVisual(nuevaCola)
     
@@ -58,24 +58,21 @@ var longitud = 1
 
 
     method move(nuevaPosicion){
-    // 1. Guardamos la posición que el siguiente segmento deberá ocupar.
-    //    Empezamos con la posición *actual* de la cabeza (antes de moverla).
+
     var proximaPosicion = self.position()
-    
-    // 2. Recorremos la cola
+
     cola.forEach({ unSegmento =>
-        // Guardamos la posición *actual* de ESTE segmento,
-// porque será la que ocupe el segmento que le sigue.
+
 const posActualDelSegmento = unSegmento.position()
         
-        // Movemos ESTE segmento a la posición del segmento de adelante (o la cabeza).
+
         unSegmento.position(proximaPosicion)
         
-        // Actualizamos la variable para la *siguiente* iteración del forEach.
+
         proximaPosicion = posActualDelSegmento
     })
     
-    // 3. Ahora que toda la cola se movió, movemos la cabeza.
+
     self.position(nuevaPosicion)
     
 }

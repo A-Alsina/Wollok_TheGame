@@ -1,0 +1,40 @@
+{"level":"info","message":"⌛ Building environment","timeElapsed":320,"timestamp":"2025-10-23T21:25:15.408Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":156,"timestamp":"2025-10-23T21:25:15.568Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":158,"timestamp":"2025-10-23T21:25:16.074Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":191,"timestamp":"2025-10-23T21:25:16.265Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":123,"timestamp":"2025-10-23T21:25:16.390Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":183,"timestamp":"2025-10-23T21:25:16.797Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":187,"timestamp":"2025-10-23T21:25:16.984Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":119,"timestamp":"2025-10-23T21:25:17.104Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":109,"timestamp":"2025-10-23T21:25:39.625Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":183,"timestamp":"2025-10-23T21:25:39.810Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":152,"timestamp":"2025-10-23T21:25:39.962Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":211,"timestamp":"2025-10-23T21:25:40.882Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":132,"timestamp":"2025-10-23T21:25:41.015Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":113,"timestamp":"2025-10-23T21:25:41.130Z"}
+{"level":"info","message":"🚀 Program executed \u001b[3m\u001b[34mSnake-Game.MainGame.SnakeGame\u001b[39m\u001b[23m on \u001b[3m\u001b[34mc:\\Repo\\Wollok_TheGame\u001b[39m\u001b[23m","ok":true,"timeElapsed":564,"timestamp":"2025-10-23T21:25:43.184Z"}
+{"exitCode":"SIGHUP","level":"info","message":"👾 Game executed Snake-Game.MainGame.SnakeGame on c:\\Repo\\Wollok_TheGame","timeElapsed":243100,"timestamp":"2025-10-23T21:29:45.721Z"}
+{"level":"info","message":"🚀 Program executed \u001b[3m\u001b[34mSnake-Game.MainGame.SnakeGame\u001b[39m\u001b[23m on \u001b[3m\u001b[34mc:\\Repo\\Wollok_TheGame\u001b[39m\u001b[23m","ok":true,"timeElapsed":477,"timestamp":"2025-10-23T21:29:48.505Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":116,"timestamp":"2025-10-23T21:57:27.495Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":166,"timestamp":"2025-10-23T21:57:27.691Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":101,"timestamp":"2025-10-23T21:57:28.898Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":179,"timestamp":"2025-10-23T21:57:29.078Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":101,"timestamp":"2025-10-23T21:57:31.466Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":141,"timestamp":"2025-10-23T21:57:31.607Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":110,"timestamp":"2025-10-23T21:57:37.156Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":157,"timestamp":"2025-10-23T21:57:37.315Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":105,"timestamp":"2025-10-23T21:57:38.779Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":141,"timestamp":"2025-10-23T21:57:38.921Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":103,"timestamp":"2025-10-23T21:57:40.259Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":142,"timestamp":"2025-10-23T21:57:40.411Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":138,"timestamp":"2025-10-23T21:57:43.069Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":102,"timestamp":"2025-10-23T21:57:45.166Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":135,"timestamp":"2025-10-23T21:57:45.310Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":117,"timestamp":"2025-10-23T21:57:46.125Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":119,"timestamp":"2025-10-23T21:57:48.093Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":134,"timestamp":"2025-10-23T21:57:48.229Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":143,"timestamp":"2025-10-23T21:57:50.256Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":137,"timestamp":"2025-10-23T21:57:52.160Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":153,"timestamp":"2025-10-23T21:58:09.720Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":123,"timestamp":"2025-10-23T21:58:09.845Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":118,"timestamp":"2025-10-23T21:58:09.964Z"}

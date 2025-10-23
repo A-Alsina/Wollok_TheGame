@@ -1,23 +1,21 @@
 import wollok.game.*
-import snake.*
+import juego.*
 
 program SnakeGame{
 
 
-    // CONFIG
+
       game.title("Snake 1")
       game.height(50)
       game.width(50)
       game.ground("fondo1.png")
 
-    // VISUALES
+
       snake.visualSnake()
       game.addVisual(manzana)
 
 
-//  game.whenCollideDo(pepita, { comida => pepita.comer(comida) })
 
-    // TECLADO
     game.onCollideDo(snake,{manzana => snake.aumentarLongitud()
                                        manzana.posicionRandom(snake)})
 
