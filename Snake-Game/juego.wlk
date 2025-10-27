@@ -5,47 +5,44 @@ object manzana{
     method posicionRandom(snake){
     const a = new Position(x= 0.randomUpTo(50).floor(), y= 0.randomUpTo(50).floor())
 
-    if (snake.cola().any({c => (c.position().x() == a.x() && c.position().y() == a.y()) }))  {
+    if (snake.partes().any({c => (c.position().x() == a.x() && c.position().y() == a.y()) }))  {
         self.posicionRandom(snake)       
     }
     else {
         position = a
     }
     }
-    method impacto(snake){
-        self.posicionRandom(snake)
+
+    method efectoComida(snake){
         snake.aumentarLongitud()
+        self.posicionRandom(snake)
     }
 
 }
 
-class Cola {
+class Parte {
 
     var property position 
 
-    method image() = "cola.png"
-    method impacto(snake) {
-        game.stop()
-    }
+    var property image = "cola.png"
 
 }
 
 
 object snake{
-var longitud = 1
-   var property position = game.at(5,5)
-   var property cola = [new Cola(position = game.at(4,5))]
+   var longitud = 1
+   var property partes = [new Parte(position = game.at(5,5), image = "snake.png")]
  
 
     method aumentarLongitud(){
-
-    var posUltimoSegmento = cola.last().position()
+    // Obtenemos la posición del *último* segmento actual.
+    const posUltimoSegmento = partes.last().position()
     
-
-    var nuevaCola = new Cola (position = posUltimoSegmento)
+    // Creamos el nuevo segmento EN ESA MISMA POSICIÓN.
+    const nuevaCola = new Parte (position = posUltimoSegmento)
     
-
-    cola.add(nuevaCola)
+    // Lo agregamos a la lista y al juego.
+    partes.add(nuevaCola)
     game.addVisual(nuevaCola)
     
     longitud += 1
@@ -53,38 +50,47 @@ var longitud = 1
 
 
     method visualSnake() {
-        game.addVisual(self)
-        cola.forEach( {c => game.addVisual(c)}) 
+        partes.forEach( {c => game.addVisual(c)}) 
       
     }
 
     method longitud() = longitud
 
-    method image() = "snake.png"
 
+   // (2,3) (2,3)   [(3,3),(3,4),(3,5)]
+   // var v=(3,6)
+   // const = (3,6)
 
+    method comer(comida){
+    comida.efectoComida(self)
+    }
 
     method move(nuevaPosicion){
+    // 1. Guardamos la posición que el siguiente segmento deberá ocupar.
+    //    Empezamos con la posición *actual* de la cabeza (antes de moverla).
+    var proximaPosicion = nuevaPosicion
 
-    var proximaPosicion = self.position()
+    if(nuevaPosicion.x() > 49 || nuevaPosicion.y() > 49 || nuevaPosicion.x() < 0 || nuevaPosicion.y() < 0){
+     game.stop()
+    }
 
-    cola.forEach({ unSegmento =>
-
-const posActualDelSegmento = unSegmento.position()
+    // 2. Recorremos la cola
+    partes.forEach({ unSegmento =>
+        // Guardamos la posición *actual* de ESTE segmento,
+// porque será la que ocupe el segmento que le sigue.
+    const posActualDelSegmento = unSegmento.position()
         
-
+        // Movemos ESTE segmento a la posición del segmento de adelante (o la cabeza).
         unSegmento.position(proximaPosicion)
         
-
+        // Actualizamos la variable para la *siguiente* iteración del forEach.
         proximaPosicion = posActualDelSegmento
     })
-    
-
-    self.position(nuevaPosicion)
     
 }
   
 }
+
 
 object clock{
     var property direccion = right
@@ -92,17 +98,17 @@ object clock{
 }
 
 object right {
-    method mover() {snake.move(snake.position().right(1))}
+    method mover() {snake.move(snake.partes().first().position().right(1))}
 }
 
 object left {
-    method mover() {snake.move(snake.position().left(1))}
+    method mover() {snake.move(snake.partes().first().position().left(1))}
 }
 
 object down {
-    method mover() {snake.move(snake.position().down(1))}
+    method mover() {snake.move(snake.partes().first().position().down(1))}
 }
 
 object up {
-    method mover() {snake.move(snake.position().up(1))}
+    method mover() {snake.move(snake.partes().first().position().up(1))}
 }
