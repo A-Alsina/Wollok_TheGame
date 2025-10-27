@@ -12,6 +12,10 @@ object manzana{
         position = a
     }
     }
+    method impacto(snake){
+        self.posicionRandom(snake)
+        snake.aumentarLongitud()
+    }
 
 }
 
@@ -20,6 +24,9 @@ class Cola {
     var property position 
 
     method image() = "cola.png"
+    method impacto(snake) {
+        game.stop()
+    }
 
 }
 
@@ -77,4 +84,25 @@ const posActualDelSegmento = unSegmento.position()
     
 }
   
+}
+
+object clock{
+    var property direccion = right
+    method movimiento(){ direccion.mover()}
+}
+
+object right {
+    method mover() {snake.move(snake.position().right(1))}
+}
+
+object left {
+    method mover() {snake.move(snake.position().left(1))}
+}
+
+object down {
+    method mover() {snake.move(snake.position().down(1))}
+}
+
+object up {
+    method mover() {snake.move(snake.position().up(1))}
 }

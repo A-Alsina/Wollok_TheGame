@@ -6,8 +6,8 @@ program SnakeGame{
 
 
       game.title("Snake 1")
-      game.height(50)
-      game.width(50)
+      game.height(51)
+      game.width(51)
       game.ground("fondo1.png")
 
 
@@ -16,13 +16,20 @@ program SnakeGame{
 
 
 
-    game.onCollideDo(snake,{manzana => snake.aumentarLongitud()
-                                       manzana.posicionRandom(snake)})
+    //game.onCollideDo(snake,{manzana => snake.aumentarLongitud()
+      //                                 manzana.posicionRandom(snake)})
 
-      keyboard.up().onPressDo({snake.move(snake.position().up(1))})
-      keyboard.down().onPressDo({snake.move(snake.position().down(1))})
-      keyboard.left().onPressDo({snake.move(snake.position().left(1))})
-      keyboard.right().onPressDo({snake.move(snake.position().right(1))})
+      game.onCollideDo(snake,{objeto=>objeto.impacto(snake)})
+
+      game.onTick(150, "movimiento", {clock.movimiento()})
+      keyboard.up().onPressDo({clock.direccion(up)})
+      keyboard.down().onPressDo({clock.direccion(down)})
+      keyboard.left().onPressDo({clock.direccion(left)})
+      keyboard.right().onPressDo({clock.direccion(right)})
+      //keyboard.up().onPressDo({snake.move(snake.position().up(1))})
+      //keyboard.down().onPressDo({snake.move(snake.position().down(1))})
+      //keyboard.left().onPressDo({snake.move(snake.position().left(1))})
+      //keyboard.right().onPressDo({snake.move(snake.position().right(1))})
 
       keyboard.b().onPressDo({snake.aumentarLongitud()})
       keyboard.c().onPressDo({manzana.posicionRandom(snake)})
