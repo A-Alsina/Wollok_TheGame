@@ -6,8 +6,8 @@ program SnakeGame{
 
     // CONFIG
       game.title("Snake 1")
-      game.height(60)
-      game.width(60)
+      game.height(50)
+      game.width(50)
       game.ground("fondo1.png")
 
     // VISUALES
@@ -19,10 +19,8 @@ program SnakeGame{
     game.onCollideDo(snake.partes().first(),{manzana => snake.comer(manzana)})
 
      game.onTick(150, "movimiento", {clock.movimiento()})
-      keyboard.up().onPressDo({clock.direccion(up)})
-      keyboard.down().onPressDo({clock.direccion(down)})
-      keyboard.left().onPressDo({clock.direccion(left)})
-      keyboard.right().onPressDo({clock.direccion(right)})
+      keyboard.left().onPressDo({clock.rotarIzquierda()})
+      keyboard.right().onPressDo({clock.rotarDerecha()})
       
       keyboard.b().onPressDo({snake.aumentarLongitud()})
       keyboard.c().onPressDo({manzana.posicionRandom(snake)})

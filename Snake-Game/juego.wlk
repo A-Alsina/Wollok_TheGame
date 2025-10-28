@@ -3,7 +3,7 @@ object manzana{
     method image() = "manzana.png"
     
     method posicionRandom(snake){
-    const a = new Position(x= 0.randomUpTo(50).floor(), y= 0.randomUpTo(50).floor())
+    const a = new Position(x= 0.randomUpTo(49).floor(), y= 0.randomUpTo(49).floor())
 
     if (snake.partes().any({c => (c.position().x() == a.x() && c.position().y() == a.y()) }))  {
         self.posicionRandom(snake)       
@@ -57,10 +57,6 @@ object snake{
     method longitud() = longitud
 
 
-   // (2,3) (2,3)   [(3,3),(3,4),(3,5)]
-   // var v=(3,6)
-   // const = (3,6)
-
     method comer(comida){
     comida.efectoComida(self)
     }
@@ -93,9 +89,25 @@ object snake{
 
 
 object clock{
-    var property direccion = right
-    method movimiento(){ direccion.mover()}
+    var direccion = [right,down,left,up]
+    var property rotor = right
+
+    method rotarDerecha() {
+        rotor = direccion.head()
+        direccion.remove(direccion.head())
+        direccion.add(rotor)
+    }
+
+     method rotarIzquierda() {
+        direccion = direccion.reverse()
+        self.rotarDerecha()
+        direccion = direccion.reverse()
+    }
+
+    method movimiento() {direccion.head().mover()}
+    
 }
+
 
 object right {
     method mover() {snake.move(snake.partes().first().position().right(1))}
