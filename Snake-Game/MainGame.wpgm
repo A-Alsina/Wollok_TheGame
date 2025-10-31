@@ -6,8 +6,8 @@ program SnakeGame{
 
     // CONFIG
       game.title("Snake 1")
-      game.height(40)
-      game.width(40)
+      game.height(50)
+      game.width(50)
       game.ground("fondo1.png")
 
     // VISUALES
@@ -25,6 +25,12 @@ program SnakeGame{
       keyboard.b().onPressDo({snake.aumentarLongitud()})
       keyboard.c().onPressDo({manzana.posicionRandom(snake)})
        
-      game.start()
+
+    // Extras:
+    game.addVisual(bomba)
+    game.onTick(10000,"bomba" ,{=> bomba.posicionRandom(snake) })    
+      
+      
+    game.start()
     }
 

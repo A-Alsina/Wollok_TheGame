@@ -1,29 +1,44 @@
-object manzana{
-    var property position = game.at(7,9)
-    method image() = "manzana.png"
-    
+class ObjetoSuelo{
+    var property position 
+    method image() 
+
+    method chocar(snake)
+
     method posicionRandom(snake){
-    const a = new Position(x= 0.randomUpTo(game.width()-1).floor(), y= 0.randomUpTo(game.height()-1).floor())
+        const a = new Position(x= 0.randomUpTo(game.width()-1).floor(), y= 0.randomUpTo(game.height()-1).floor())
+        if (snake.partes().any({c => (c.position().x() == a.x() && c.position().y() == a.y()) }))  {
+            self.posicionRandom(snake)       
+        }
+        else {
+            position = a
+        }
+    }
+}
 
-    if (snake.partes().any({c => (c.position().x() == a.x() && c.position().y() == a.y()) }))  {
-        self.posicionRandom(snake)       
-    }
-    else {
-        position = a
-    }
-    }
 
-    method chocar(snake){
+object manzana inherits ObjetoSuelo(position = game.at(7,9)){
+    override method image() = "manzana.png"
+
+    override method chocar(snake){
         snake.aumentarLongitud()
         self.posicionRandom(snake)
     }
 
 }
 
+object bomba inherits ObjetoSuelo(position = game.at(8,8)){
+    override method image()= "bomba1.png"
+
+    override method chocar(snake){
+        game.stop()
+    }
+
+}
+
+
+
 class Parte {
-
     var property position 
-
     var property image = "cola.png"
 
 }
