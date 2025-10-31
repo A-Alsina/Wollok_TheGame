@@ -26,8 +26,8 @@ object manzana inherits ObjetoSuelo(position = game.at(7,9)){
 
 }
 
-object bomba inherits ObjetoSuelo(position = game.at(8,8)){
-    override method image()= "bomba.png"
+object bomba inherits ObjetoSuelo(position = game.at(game.width() - 3, game.height()-3)){
+    override method image()= "bomba1.png"
 
     override method chocar(snake){
         game.stop()
