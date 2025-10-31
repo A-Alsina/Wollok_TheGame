@@ -3,7 +3,7 @@ object manzana{
     method image() = "manzana.png"
     
     method posicionRandom(snake){
-    const a = new Position(x= 0.randomUpTo(49).floor(), y= 0.randomUpTo(49).floor())
+    const a = new Position(x= 0.randomUpTo(game.width()-1).floor(), y= 0.randomUpTo(game.height()-1).floor())
 
     if (snake.partes().any({c => (c.position().x() == a.x() && c.position().y() == a.y()) }))  {
         self.posicionRandom(snake)       
@@ -13,7 +13,7 @@ object manzana{
     }
     }
 
-    method efectoComida(snake){
+    method chocar(snake){
         snake.aumentarLongitud()
         self.posicionRandom(snake)
     }
@@ -57,17 +57,19 @@ object snake{
     method longitud() = longitud
 
 
-    method comer(comida){
-    comida.efectoComida(self)
-    }
 
     method move(nuevaPosicion){
     // 1. Guardamos la posición que el siguiente segmento deberá ocupar.
     //    Empezamos con la posición *actual* de la cabeza (antes de moverla).
     var proximaPosicion = nuevaPosicion
 
-    if(nuevaPosicion.x() > 49 || nuevaPosicion.y() > 49 || nuevaPosicion.x() < 0 || nuevaPosicion.y() < 0){
+    if(nuevaPosicion.x() > game.width()-1 || nuevaPosicion.y() > game.width()-1|| nuevaPosicion.x() < 0 || nuevaPosicion.y() < 0){
      game.stop()
+    }
+
+    //Funcion de chocar con la cola:
+    if ( self.longitud() > 3 and partes.any({unSegmento => unSegmento.position()==(nuevaPosicion)})){
+        game.stop()
     }
 
     // 2. Recorremos la cola
