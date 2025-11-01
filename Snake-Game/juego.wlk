@@ -27,7 +27,7 @@ object manzana inherits ObjetoSuelo(position = game.at(7,9)){
 }
 
 object bomba inherits ObjetoSuelo(position = game.at(game.width() - 3, game.height()-3)){
-    override method image()= "bomba1.png"
+    override method image() = "bomba1.png"
 
     override method chocar(snake){
         game.stop()
@@ -106,38 +106,37 @@ object snake{
 
 
 object clock{
-    var direccion = [right,down,left,up]
-    var property rotor = right
-
-    method rotarDerecha() {
-        rotor = direccion.head()
-        direccion.remove(direccion.head())
-        direccion.add(rotor)
-    }
-
-     method rotarIzquierda() {
-        direccion = direccion.reverse()
-        self.rotarDerecha()
-        direccion = direccion.reverse()
-    }
-
-    method movimiento() {direccion.head().mover()}
+    var property direccion = right
+    method movimiento(){ direccion.mover()}
     
+    method redireccionar(nuevaDireccion){
+        if(nuevaDireccion != self.direccion().opuesto()){
+            direccion = nuevaDireccion
+        }
+    }
 }
 
 
 object right {
     method mover() {snake.move(snake.partes().first().position().right(1))}
+
+    method opuesto() = left
 }
 
 object left {
     method mover() {snake.move(snake.partes().first().position().left(1))}
+
+    method opuesto() = right
 }
 
 object down {
     method mover() {snake.move(snake.partes().first().position().down(1))}
+
+    method opuesto() = up
 }
 
 object up {
     method mover() {snake.move(snake.partes().first().position().up(1))}
+
+    method opuesto() = down
 }

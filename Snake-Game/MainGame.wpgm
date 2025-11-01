@@ -19,8 +19,10 @@ program SnakeGame{
     game.onCollideDo(snake.partes().first(),{objetoSuelo => objetoSuelo.chocar(snake)})
 
      game.onTick(150, "movimiento", {clock.movimiento()})
-      keyboard.left().onPressDo({clock.rotarIzquierda()})
-      keyboard.right().onPressDo({clock.rotarDerecha()})
+      keyboard.up().onPressDo({clock.redireccionar(up)})
+      keyboard.down().onPressDo({clock.redireccionar(down)})
+      keyboard.left().onPressDo({clock.redireccionar(left)})
+      keyboard.right().onPressDo({clock.redireccionar(right)})
       
       keyboard.b().onPressDo({snake.aumentarLongitud()})
       keyboard.c().onPressDo({manzana.posicionRandom(snake)})
