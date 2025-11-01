@@ -1,3 +1,5 @@
+import sonidos.*
+
 class ObjetoSuelo{
     var property position 
     method image() 
@@ -22,7 +24,10 @@ object manzana inherits ObjetoSuelo(position = game.at(7,9)){
     override method chocar(snake){
         snake.aumentarLongitud()
         self.posicionRandom(snake)
+        sonidoComerManzana.play()
     }
+
+
 
 }
 
@@ -30,7 +35,8 @@ object bomba inherits ObjetoSuelo(position = game.at(game.width() - 3, game.heig
     override method image() = "bomba1.png"
 
     override method chocar(snake){
-        game.stop()
+        sonidoBomba.play()
+        interfazJuego.pararJuego()
     }
 
 }
@@ -41,12 +47,16 @@ class Parte {
     var property position 
     var property image = "cola.png"
 
+    method chocar(snake){ 
+        interfazJuego.pararJuego()
+    }
+
 }
 
 
 object snake{
    var longitud = 1
-   var property partes = [new Parte(position = game.at(5,5), image = "snake.png")]
+   var property partes = [new Parte(position = game.at(5,5), image = "snake.png"), new Parte(position = game.at(4,5))]
  
 
     method aumentarLongitud(){
@@ -79,12 +89,13 @@ object snake{
     var proximaPosicion = nuevaPosicion
 
     if(nuevaPosicion.x() > game.width()-1 || nuevaPosicion.y() > game.width()-1|| nuevaPosicion.x() < 0 || nuevaPosicion.y() < 0){
-     game.stop()
+     interfazJuego.pararJuego()
+      
     }
 
     //Funcion de chocar con la cola:
     if ( self.longitud() > 3 and partes.any({unSegmento => unSegmento.position()==(nuevaPosicion)})){
-        game.stop()
+        interfazJuego.pararJuego()
     }
 
     // 2. Recorremos la cola
@@ -140,3 +151,18 @@ object up {
 
     method opuesto() = down
 }
+
+object interfazJuego{
+
+    method pararJuego(){
+    game.schedule(500, {sonidoGameOver.play()})
+    
+
+    game.removeTickEvent("movimiento")
+    game.schedule(1000, {sonidoMusicaFondo.stop()})
+    game.schedule(2000, {game.stop()})
+    
+    }
+}
+
+
