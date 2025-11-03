@@ -2,6 +2,54 @@ import wollok.game.*
 import juego.*
 import sonidos.*
 
+program Inicio {
+  game.title("Snake 1")
+  game.height(30)
+  game.width(30)
+  game.ground("fondo1.png")
+  game.addVisual(inicio)
+
+  keyboard.space().onPressDo({
+    game.removeVisual(inicio)
+
+    
+     // MUSICA DE FONDO
+    sonidoMusicaFondo.playLoop()
+
+
+    // VISUALES
+      snake.visualSnake()
+      game.addVisual(manzana)
+
+
+    // TECLADO
+      game.onCollideDo(snake.partes().first(),{objetoSuelo => objetoSuelo.chocar(snake)})
+
+      game.onTick(200, "movimiento", {clock.movimiento()})
+      keyboard.up().onPressDo({clock.redireccionar(up)})
+      keyboard.down().onPressDo({clock.redireccionar(down)})
+      keyboard.left().onPressDo({clock.redireccionar(left)})
+      keyboard.right().onPressDo({clock.redireccionar(right)})
+      
+      keyboard.b().onPressDo({snake.aumentarLongitud()})
+      keyboard.c().onPressDo({manzana.posicionRandom(snake)})
+       
+    
+   
+
+
+    // Extras:
+    game.addVisual(bomba)
+    game.onTick(10000,"bomba" ,{=> bomba.posicionRandom(snake) })    
+      
+      
+    })
+    game.start()
+}
+
+
+
+/*
 program SnakeGame{
 
 
@@ -41,6 +89,8 @@ program SnakeGame{
     game.onTick(10000,"bomba" ,{=> bomba.posicionRandom(snake) })    
       
       
+    )
     game.start()
-    }
+}
+*/
 

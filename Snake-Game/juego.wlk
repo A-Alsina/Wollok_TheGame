@@ -1,5 +1,10 @@
 import sonidos.*
 
+object inicio {
+    method image()= "fotoInicio.png"
+    method position() = game.at(0,0)
+}
+
 class ObjetoSuelo{
     var property position 
     method image() 
@@ -32,7 +37,7 @@ object manzana inherits ObjetoSuelo(position = game.at(7,9)){
 }
 
 object bomba inherits ObjetoSuelo(position = game.at(game.width() - 3, game.height()-3)){
-    override method image() = "bomba1.png"
+    override method image() = "bomba.png"
 
     override method chocar(snake){
         sonidoBomba.play()
@@ -56,7 +61,7 @@ class Parte {
 
 object snake{
    var longitud = 1
-   var property partes = [new Parte(position = game.at(5,5), image = "snake.png"), new Parte(position = game.at(4,5))]
+   var property partes = [new Parte(position = game.at(5,5), image = "cabeza.png"), new Parte(position = game.at(4,5))]
  
 
     method aumentarLongitud(){
