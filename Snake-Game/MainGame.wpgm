@@ -34,8 +34,6 @@ program SnakeGame{
        
     
    
-
-
     // Extras:
     game.addVisual(bomba)
     game.onTick(10000,"bomba" ,{=> bomba.posicionRandom(snake) })    
