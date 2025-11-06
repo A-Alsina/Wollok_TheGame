@@ -48,70 +48,124 @@ object bomba inherits ObjetoSuelo(position = game.at(game.width() - 3, game.heig
 
 
 
+
 class Parte {
-    var property position 
-    var property image = "RPartePH.png"
+    var property position
+    var property direccion = right 
+    var property image = null
 
-    method chocar(snake){ 
+    method chocar(snake) { 
         interfazJuego.pararJuego()
-    }
-
-    method redireccionarImagen(direccion){
-    self.image(direccion.letra() + image.drop(1))
     }
+    
 
+    method redireccionarParte(nuevaDireccion) {
+        
+        const direccionAnt = self.direccion()
+        
+        
+        self.direccion(nuevaDireccion)
+        
+        self.actualizarImagen(direccionAnt, nuevaDireccion)
+    }
+    
+
+    method actualizarImagen(direccionAnt, direccionNueva) {
+        
+    }
+    
+  
+    method inicializarImagen() {
+        self.actualizarImagen(self.direccion(), self.direccion())
+    }
+}
+
+class Cabeza inherits Parte {
+    override method actualizarImagen(direccionAnt, direccionNueva) {
+        self.image(direccionNueva.imagenCabeza())
+    }
+}
+
+class Cuerpo inherits Parte {
+   override method actualizarImagen(direccionAnt, direccionNueva) {
+        if (direccionAnt == direccionNueva) {
+          
+            self.image(direccionNueva.imagenCuerpoRecto())
+        } else {
+            self.image(direccionNueva.imagenCuerpoEsquina(direccionAnt))
+        }
+    }
 }
 
 
 object snake{
-   var longitud = 1
-   var property partes = [new Parte(position = game.at(5,5), image = "RcabezaPH.png"), new Parte(position = game.at(4,5))]
- 
+ 	var longitud = 1
+ 	var property partes = [
+ 		new Cabeza(position = game.at(5,5), direccion = right),
+ 		new Cuerpo(position = game.at(4,5), direccion = right)
+ 	]
+ 	
+ 	method inicializarImagenes(){
+ 		partes.forEach({parte => parte.inicializarImagen()})
+ 	}
 
-    method aumentarLongitud(){
-    
-    const posUltimoSegmento = partes.last().position()
-    
-   
-    const nuevaCola = new Parte (position = posUltimoSegmento)
-    
-    
-    partes.add(nuevaCola)
-    game.addVisual(nuevaCola)
-    
-    longitud += 1
-}
+ 	method aumentarLongitud(){
+ 		const posUltimoSegmento = partes.last().position()
+ 		const direccionCola = partes.last().direccion()
+ 		
+ 		const nuevaCola = new Cuerpo (position = posUltimoSegmento, direccion = direccionCola)
+ 		nuevaCola.inicializarImagen()
 
-
-    method visualSnake() {
-        partes.forEach( {c => game.addVisual(c)}) 
-      
+ 		partes.add(nuevaCola)
+ 		game.addVisual(nuevaCola)
+ 		
+ 		longitud += 1
     }
 
-    method longitud() = longitud
+ 	method visualSnake() {
+ 		partes.forEach( {c => game.addVisual(c)}) 
+ 	}
+
+ 	method longitud() = longitud
 
 
+ 	method move(nuevaPosicion, nuevaDireccion){
+ 		
 
-    method move(nuevaPosicion){
-   var proximaPosicion = nuevaPosicion
+ 		if(nuevaPosicion.x() > game.width()-1 || nuevaPosicion.y() > game.height()-1|| nuevaPosicion.x() < 0 || nuevaPosicion.y() < 0){
+ 			interfazJuego.pararJuego()
+ 		}
+ 		if ( self.longitud() > 3 and partes.any({unSegmento => unSegmento.position()==(nuevaPosicion)})){
+ 			interfazJuego.pararJuego()
+ 	 	}
 
-    if(nuevaPosicion.x() > game.width()-1 || nuevaPosicion.y() > game.width()-1|| nuevaPosicion.x() < 0 || nuevaPosicion.y() < 0){
-     interfazJuego.pararJuego()
-      
-    }
+ 		
+ 		const cabeza = partes.first()
+ 		const posCabezaAnt = cabeza.position()
+ 		const direccionCabezaAnt = cabeza.direccion()
 
- 
-    if ( self.longitud() > 3 and partes.any({unSegmento => unSegmento.position()==(nuevaPosicion)})){
-        interfazJuego.pararJuego()
-    }
-    partes.forEach({ unSegmento =>
-        const posActualDelSegmento = unSegmento.position()
-        unSegmento.position(proximaPosicion)
-        proximaPosicion = posActualDelSegmento
-    })
-    
-}
-  
+ 		
+ 		cabeza.position(nuevaPosicion)
+ 		cabeza.redireccionarParte(nuevaDireccion)
+
+ 	
+ 		var posParaSiguiente = posCabezaAnt
+ 		
+ 		var direccionParaSiguiente = nuevaDireccion 
+
+ 		
+ 		partes.drop(1).forEach({ parte =>
+ 			const posActualParte = parte.position()
+ 			const direccionActualParte = parte.direccion()
+
+ 			parte.position(posParaSiguiente)
+ 			parte.redireccionarParte(direccionParaSiguiente) 
+
+ 			
+ 			posParaSiguiente = posActualParte
+ 			direccionParaSiguiente = direccionActualParte
+ 		})
+ 	}
 }
 
 
@@ -128,7 +182,6 @@ object clock{
         if(sePuedeRedireccionar){
         if(nuevaDireccion != self.direccion().opuesto() && direccion != nuevaDireccion){
             direccion = nuevaDireccion
-            snake.partes().forEach({parte => parte.redireccionarImagen(nuevaDireccion)})
         }
         sePuedeRedireccionar = false
         }
@@ -137,36 +190,68 @@ object clock{
 
 
 object right {
-    method letra() = "R"
-
-    method mover() {snake.move(snake.partes().first().position().right(1))}
-    
-
+    method mover() {snake.move(snake.partes().first().position().right(1), self)}
     method opuesto() = left
+
+    method imagenCabeza() = "RcabezaPH.png"
+    method imagenCuerpoRecto() = "RcuerpoPH.png"
+    method imagenCuerpoEsquina(direccionOrigen){
+        if (direccionOrigen == up) {
+            return "UResquinaPH.png" 
+        } else { 
+            return "DResquinaPH.png" 
+        }
+    }
+
+    
 }
 
 object left {
-    method letra() = "L"
-
-    method mover() {snake.move(snake.partes().first().position().left(1))}
-
+    method mover() {snake.move(snake.partes().first().position().left(1), self)}
     method opuesto() = right
+
+    method imagenCabeza() = "LcabezaPH.png"
+    method imagenCuerpoRecto() = "LcuerpoPH.png"
+    method imagenCuerpoEsquina(direccionOrigen) {
+        if (direccionOrigen == up) {
+            return "ULesquinaPH.png"  
+        } else { 
+            return "DLesquinaPH.png" 
+        }
+    }
 }
 
 object down {
-    method letra() = "D"
-
-    method mover() {snake.move(snake.partes().first().position().down(1))}
-
+    method mover() {snake.move(snake.partes().first().position().down(1), self)}
     method opuesto() = up
+
+    method imagenCabeza() = "DcabezaPH.png"
+    method imagenCuerpoRecto() = "DcuerpoPH.png"
+    method imagenCuerpoEsquina(direccionOrigen) {
+        if (direccionOrigen == left) {
+            return "LDesquinaPH.png"  
+        } else {
+            return "RDesquinaPH.png" 
+        }
+    }
 }
 
 object up {
-    method letra() = "U" 
-
-    method mover() {snake.move(snake.partes().first().position().up(1))}
-
+    method mover() {snake.move(snake.partes().first().position().up(1), self)}
     method opuesto() = down
+
+    method imagenCabeza() = "UcabezaPH.png"
+    method imagenCuerpoRecto() = "UcuerpoPH.png"
+    method imagenCuerpoEsquina(direccionOrigen) {
+        if (direccionOrigen == left) {
+            return "LUesquinaPH.png"  
+        } else { 
+            return "RUesquinaPH.png" 
+        }
+    }
+
+
+
 }
 
 object interfazJuego{

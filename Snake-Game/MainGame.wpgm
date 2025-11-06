@@ -19,6 +19,8 @@ program Inicio {
 
     // VISUALES
       snake.visualSnake()
+      snake.inicializarImagenes()
+    
       game.addVisual(manzana)
 
 
