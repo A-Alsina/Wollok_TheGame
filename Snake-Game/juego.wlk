@@ -50,18 +50,22 @@ object bomba inherits ObjetoSuelo(position = game.at(game.width() - 3, game.heig
 
 class Parte {
     var property position 
-    var property image = "cola.png"
+    var property image = "RParte.png"
 
     method chocar(snake){ 
         interfazJuego.pararJuego()
     }
+
+    method redireccionarImagen(direccion){
+    self.image(direccion.letra() + image.drop(1))
+    }
 
 }
 
 
 object snake{
    var longitud = 1
-   var property partes = [new Parte(position = game.at(5,5), image = "cabeza.png"), new Parte(position = game.at(4,5))]
+   var property partes = [new Parte(position = game.at(5,5), image = "RcabezaS.png"), new Parte(position = game.at(4,5))]
  
 
     method aumentarLongitud(){
@@ -126,32 +130,42 @@ object clock{
     method movimiento(){ direccion.mover()}
     
     method redireccionar(nuevaDireccion){
-        if(nuevaDireccion != self.direccion().opuesto()){
+        if(nuevaDireccion != self.direccion().opuesto() && direccion != nuevaDireccion){
             direccion = nuevaDireccion
+            snake.partes().forEach({parte => parte.redireccionarImagen(nuevaDireccion)})
         }
     }
 }
 
 
 object right {
+    method letra() = "R"
+
     method mover() {snake.move(snake.partes().first().position().right(1))}
+    
 
     method opuesto() = left
 }
 
 object left {
+    method letra() = "L"
+
     method mover() {snake.move(snake.partes().first().position().left(1))}
 
     method opuesto() = right
 }
 
 object down {
+    method letra() = "D"
+
     method mover() {snake.move(snake.partes().first().position().down(1))}
 
     method opuesto() = up
 }
 
 object up {
+    method letra() = "U" 
+
     method mover() {snake.move(snake.partes().first().position().up(1))}
 
     method opuesto() = down
