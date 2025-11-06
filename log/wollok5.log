@@ -2862,3 +2862,213 @@
 {"exitCode":"SIGHUP","level":"info","message":"👾 Game executed Snake-Game.MainGame.Inicio on c:\\Users\\Marcelo\\gameSnake6","timeElapsed":274868,"timestamp":"2025-11-06T20:22:55.707Z"}
 {"level":"info","message":"🚀 Program executed \u001b[3m\u001b[34mSnake-Game.MainGame.Inicio\u001b[39m\u001b[23m on \u001b[3m\u001b[34mc:\\Users\\Marcelo\\gameSnake6\u001b[39m\u001b[23m","ok":true,"timeElapsed":538,"timestamp":"2025-11-06T20:22:58.849Z"}
 {"exitCode":0,"level":"info","message":"👾 Game executed Snake-Game.MainGame.Inicio on c:\\Users\\Marcelo\\gameSnake6","timeElapsed":154754,"timestamp":"2025-11-06T20:25:33.066Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":213,"timestamp":"2025-11-06T21:47:58.865Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":148,"timestamp":"2025-11-06T21:47:59.021Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":233,"timestamp":"2025-11-06T21:47:59.262Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":106,"timestamp":"2025-11-06T21:47:59.369Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":105,"timestamp":"2025-11-06T21:47:59.490Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":170,"timestamp":"2025-11-06T21:47:59.667Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":103,"timestamp":"2025-11-06T21:47:59.772Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":128,"timestamp":"2025-11-06T21:47:59.917Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/sonidos.wlk","timeElapsed":132,"timestamp":"2025-11-06T21:48:00.050Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":161,"timestamp":"2025-11-06T21:48:00.223Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/interfaz.wlk","timeElapsed":249,"timestamp":"2025-11-06T21:48:00.488Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":220,"timestamp":"2025-11-06T21:48:23.761Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/interfaz.wlk","timeElapsed":177,"timestamp":"2025-11-06T21:48:23.940Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":129,"timestamp":"2025-11-06T21:48:24.506Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/interfaz.wlk","timeElapsed":157,"timestamp":"2025-11-06T21:48:24.664Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":109,"timestamp":"2025-11-06T21:48:40.913Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/interfaz.wlk","timeElapsed":173,"timestamp":"2025-11-06T21:48:41.088Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":141,"timestamp":"2025-11-06T21:48:41.299Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/interfaz.wlk","timeElapsed":203,"timestamp":"2025-11-06T21:48:41.538Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":156,"timestamp":"2025-11-06T21:49:02.897Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/interfaz.wlk","timeElapsed":170,"timestamp":"2025-11-06T21:49:03.068Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":462,"timestamp":"2025-11-06T22:06:01.494Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":264,"timestamp":"2025-11-06T22:06:01.759Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":137,"timestamp":"2025-11-06T22:06:01.989Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num11.png","timestamp":"2025-11-06T22:06:01.990Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":189,"timestamp":"2025-11-06T22:06:02.268Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/sonidos.wlk","timeElapsed":145,"timestamp":"2025-11-06T22:06:02.416Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":128,"timestamp":"2025-11-06T22:06:02.544Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":154,"timestamp":"2025-11-06T22:06:02.700Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":212,"timestamp":"2025-11-06T22:06:43.951Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":159,"timestamp":"2025-11-06T22:06:44.142Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":149,"timestamp":"2025-11-06T22:06:44.329Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":173,"timestamp":"2025-11-06T22:06:44.502Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":196,"timestamp":"2025-11-06T22:06:46.130Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":246,"timestamp":"2025-11-06T22:06:46.391Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":279,"timestamp":"2025-11-06T22:06:50.648Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/interfaz.wlk","timeElapsed":313,"timestamp":"2025-11-06T22:06:50.962Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/sonidos.wlk","timeElapsed":138,"timestamp":"2025-11-06T22:06:51.101Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":188,"timestamp":"2025-11-06T22:06:51.297Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":253,"timestamp":"2025-11-06T22:06:51.552Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":321,"timestamp":"2025-11-06T22:06:52.263Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/interfaz.wlk","timeElapsed":379,"timestamp":"2025-11-06T22:06:52.647Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/sonidos.wlk","timeElapsed":177,"timestamp":"2025-11-06T22:06:52.825Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":135,"timestamp":"2025-11-06T22:06:52.960Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/juego.wlk","timeElapsed":146,"timestamp":"2025-11-06T22:06:53.107Z"}
+{"level":"info","message":"🚀 Program executed \u001b[3m\u001b[34mSnake-Game.MainGame.Inicio\u001b[39m\u001b[23m on \u001b[3m\u001b[34mc:\\Users\\Marcelo\\gameSnakeFinal\u001b[39m\u001b[23m","ok":true,"timeElapsed":603,"timestamp":"2025-11-06T22:06:59.044Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":869,"timestamp":"2025-11-06T22:18:44.818Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":1934,"timestamp":"2025-11-06T22:18:46.870Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/MainGame.wpgm","timestamp":"2025-11-06T22:18:47.002Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num0.png","timestamp":"2025-11-06T22:18:47.003Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num1.png","timestamp":"2025-11-06T22:18:47.003Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num2.png","timestamp":"2025-11-06T22:18:47.003Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num3.png","timestamp":"2025-11-06T22:18:47.003Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num4.png","timestamp":"2025-11-06T22:18:47.003Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num5.png","timestamp":"2025-11-06T22:18:47.003Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num6.png","timestamp":"2025-11-06T22:18:47.003Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num7.png","timestamp":"2025-11-06T22:18:47.003Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num8.png","timestamp":"2025-11-06T22:18:47.003Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num9.png","timestamp":"2025-11-06T22:18:47.006Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":138,"timestamp":"2025-11-06T22:18:47.177Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/sonidos.wlk","timeElapsed":2668,"timestamp":"2025-11-06T22:18:49.862Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":214,"timestamp":"2025-11-06T22:19:16.181Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":213,"timestamp":"2025-11-06T22:19:16.396Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num00.png.png","timestamp":"2025-11-06T22:19:16.507Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":241,"timestamp":"2025-11-06T22:19:19.888Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":224,"timestamp":"2025-11-06T22:19:20.113Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num0.png.png","timestamp":"2025-11-06T22:19:20.224Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":165,"timestamp":"2025-11-06T22:19:27.041Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":259,"timestamp":"2025-11-06T22:19:27.300Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num22.png.png","timestamp":"2025-11-06T22:19:27.408Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":169,"timestamp":"2025-11-06T22:19:29.297Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":220,"timestamp":"2025-11-06T22:19:29.519Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num111.png.png","timestamp":"2025-11-06T22:19:29.634Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":181,"timestamp":"2025-11-06T22:19:34.209Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":269,"timestamp":"2025-11-06T22:19:34.479Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num33.png.png","timestamp":"2025-11-06T22:19:34.592Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":171,"timestamp":"2025-11-06T22:19:37.134Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":241,"timestamp":"2025-11-06T22:19:37.375Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num11.png","timestamp":"2025-11-06T22:19:37.485Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":187,"timestamp":"2025-11-06T22:19:39.453Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":226,"timestamp":"2025-11-06T22:19:39.680Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num44.png.png","timestamp":"2025-11-06T22:19:39.790Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":197,"timestamp":"2025-11-06T22:19:41.964Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":236,"timestamp":"2025-11-06T22:19:42.201Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num55.png.png","timestamp":"2025-11-06T22:19:42.307Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":176,"timestamp":"2025-11-06T22:19:44.786Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":215,"timestamp":"2025-11-06T22:19:45.003Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num66.png.png","timestamp":"2025-11-06T22:19:45.108Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":247,"timestamp":"2025-11-06T22:19:47.881Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":241,"timestamp":"2025-11-06T22:19:48.124Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num77.png.png","timestamp":"2025-11-06T22:19:48.240Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":204,"timestamp":"2025-11-06T22:19:51.364Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":207,"timestamp":"2025-11-06T22:19:51.572Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num88.png.png","timestamp":"2025-11-06T22:19:51.680Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":165,"timestamp":"2025-11-06T22:19:55.885Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":231,"timestamp":"2025-11-06T22:19:56.117Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num99.png.png","timestamp":"2025-11-06T22:19:56.226Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":138,"timestamp":"2025-11-06T22:20:28.842Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":206,"timestamp":"2025-11-06T22:20:29.049Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num9.png","timestamp":"2025-11-06T22:20:29.157Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":132,"timestamp":"2025-11-06T22:20:34.764Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":218,"timestamp":"2025-11-06T22:20:34.983Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num99.png.png","timestamp":"2025-11-06T22:20:35.091Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":168,"timestamp":"2025-11-06T22:20:57.646Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":201,"timestamp":"2025-11-06T22:20:57.848Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":163,"timestamp":"2025-11-06T22:20:58.022Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":196,"timestamp":"2025-11-06T22:20:58.218Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num9.png","timestamp":"2025-11-06T22:20:58.219Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":132,"timestamp":"2025-11-06T22:20:58.352Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":244,"timestamp":"2025-11-06T22:20:58.597Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num8.png","timestamp":"2025-11-06T22:20:58.597Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":158,"timestamp":"2025-11-06T22:20:58.782Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":244,"timestamp":"2025-11-06T22:20:59.027Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num7.png","timestamp":"2025-11-06T22:20:59.027Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":138,"timestamp":"2025-11-06T22:20:59.167Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":196,"timestamp":"2025-11-06T22:20:59.363Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num6.png","timestamp":"2025-11-06T22:20:59.364Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":130,"timestamp":"2025-11-06T22:20:59.503Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":214,"timestamp":"2025-11-06T22:20:59.718Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num5.png","timestamp":"2025-11-06T22:20:59.719Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":126,"timestamp":"2025-11-06T22:20:59.846Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":205,"timestamp":"2025-11-06T22:21:00.051Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num4.png","timestamp":"2025-11-06T22:21:00.051Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":117,"timestamp":"2025-11-06T22:21:00.181Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":289,"timestamp":"2025-11-06T22:21:00.471Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num1.png","timestamp":"2025-11-06T22:21:00.471Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":241,"timestamp":"2025-11-06T22:21:00.716Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":177,"timestamp":"2025-11-06T22:21:00.893Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num3.png","timestamp":"2025-11-06T22:21:00.894Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":120,"timestamp":"2025-11-06T22:21:01.014Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":174,"timestamp":"2025-11-06T22:21:01.189Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num11.png","timestamp":"2025-11-06T22:21:01.190Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":144,"timestamp":"2025-11-06T22:21:01.346Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":186,"timestamp":"2025-11-06T22:21:01.533Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num2.png","timestamp":"2025-11-06T22:21:01.533Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":115,"timestamp":"2025-11-06T22:21:01.651Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":175,"timestamp":"2025-11-06T22:21:01.827Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num0.png","timestamp":"2025-11-06T22:21:01.828Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num0.png.png","timestamp":"2025-11-06T22:21:01.939Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":189,"timestamp":"2025-11-06T22:21:04.099Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":299,"timestamp":"2025-11-06T22:21:04.398Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num99.png.png","timestamp":"2025-11-06T22:21:04.511Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num88.png.png","timestamp":"2025-11-06T22:21:04.511Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num77.png.png","timestamp":"2025-11-06T22:21:04.511Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num66.png.png","timestamp":"2025-11-06T22:21:04.511Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num55.png.png","timestamp":"2025-11-06T22:21:04.511Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num44.png.png","timestamp":"2025-11-06T22:21:04.512Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num33.png.png","timestamp":"2025-11-06T22:21:04.512Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num22.png.png","timestamp":"2025-11-06T22:21:04.512Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num111.png.png","timestamp":"2025-11-06T22:21:04.512Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num00.png.png","timestamp":"2025-11-06T22:21:04.512Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":204,"timestamp":"2025-11-06T22:21:07.910Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":228,"timestamp":"2025-11-06T22:21:08.174Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":125,"timestamp":"2025-11-06T22:21:10.729Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":205,"timestamp":"2025-11-06T22:21:10.934Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":107,"timestamp":"2025-11-06T22:21:11.173Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":187,"timestamp":"2025-11-06T22:21:11.361Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":126,"timestamp":"2025-11-06T22:21:14.716Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":234,"timestamp":"2025-11-06T22:21:14.952Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":127,"timestamp":"2025-11-06T22:21:15.248Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/MainGame.wpgm","timeElapsed":171,"timestamp":"2025-11-06T22:21:15.421Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":218,"timestamp":"2025-11-06T22:21:31.583Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":340,"timestamp":"2025-11-06T22:21:31.927Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num0.png","timestamp":"2025-11-06T22:21:32.031Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num1.png","timestamp":"2025-11-06T22:21:32.031Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num2.png","timestamp":"2025-11-06T22:21:32.031Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num3.png","timestamp":"2025-11-06T22:21:32.031Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num4.png","timestamp":"2025-11-06T22:21:32.031Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num5.png","timestamp":"2025-11-06T22:21:32.032Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num6.png","timestamp":"2025-11-06T22:21:32.032Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num7.png","timestamp":"2025-11-06T22:21:32.032Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num8.png","timestamp":"2025-11-06T22:21:32.033Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num9.png","timestamp":"2025-11-06T22:21:32.034Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":202,"timestamp":"2025-11-06T22:21:41.998Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":233,"timestamp":"2025-11-06T22:21:42.233Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num00.png.png","timestamp":"2025-11-06T22:21:42.340Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":186,"timestamp":"2025-11-06T22:21:44.233Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":217,"timestamp":"2025-11-06T22:21:44.450Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num22.png.png","timestamp":"2025-11-06T22:21:44.560Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":187,"timestamp":"2025-11-06T22:21:47.087Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":216,"timestamp":"2025-11-06T22:21:47.304Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num33.png.png","timestamp":"2025-11-06T22:21:47.424Z"}
+{"level":"info","message":"⌛ Validating Snake-Game/sonidos.wlk","timeElapsed":155,"timestamp":"2025-11-06T22:21:47.598Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":255,"timestamp":"2025-11-06T22:21:52.657Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":226,"timestamp":"2025-11-06T22:21:52.884Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num44.png.png","timestamp":"2025-11-06T22:21:52.990Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":240,"timestamp":"2025-11-06T22:21:56.175Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":229,"timestamp":"2025-11-06T22:21:56.408Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num55.png.png","timestamp":"2025-11-06T22:21:56.517Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":240,"timestamp":"2025-11-06T22:21:58.487Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":230,"timestamp":"2025-11-06T22:21:58.718Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num66.png.png","timestamp":"2025-11-06T22:21:58.829Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":291,"timestamp":"2025-11-06T22:22:00.645Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":253,"timestamp":"2025-11-06T22:22:00.899Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num77.png.png","timestamp":"2025-11-06T22:22:01.010Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":182,"timestamp":"2025-11-06T22:22:03.852Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":268,"timestamp":"2025-11-06T22:22:04.121Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num77.png","timestamp":"2025-11-06T22:22:04.228Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":241,"timestamp":"2025-11-06T22:22:05.309Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":234,"timestamp":"2025-11-06T22:22:05.555Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num88.png.png","timestamp":"2025-11-06T22:22:05.661Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":269,"timestamp":"2025-11-06T22:22:07.664Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":209,"timestamp":"2025-11-06T22:22:07.873Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num99.png.png","timestamp":"2025-11-06T22:22:07.977Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":222,"timestamp":"2025-11-06T22:22:10.191Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":260,"timestamp":"2025-11-06T22:22:10.456Z"}
+{"level":"info","message":"Removing diagnostics from /C:/Users/Marcelo/gameSnakeFinal/Snake-Game/assets/num111.png.png","timestamp":"2025-11-06T22:22:10.561Z"}
+{"exitCode":"SIGHUP","level":"info","message":"👾 Game executed Snake-Game.MainGame.Inicio on c:\\Users\\Marcelo\\gameSnakeFinal","timeElapsed":916604,"timestamp":"2025-11-06T22:22:15.188Z"}
+{"level":"info","message":"🚀 Program executed \u001b[3m\u001b[34mSnake-Game.MainGame.Inicio\u001b[39m\u001b[23m on \u001b[3m\u001b[34mc:\\Users\\Marcelo\\gameSnakeFinal\u001b[39m\u001b[23m","ok":true,"timeElapsed":676,"timestamp":"2025-11-06T22:22:20.212Z"}
+{"exitCode":"SIGHUP","level":"info","message":"👾 Game executed Snake-Game.MainGame.Inicio on c:\\Users\\Marcelo\\gameSnakeFinal","timeElapsed":48841,"timestamp":"2025-11-06T22:23:08.376Z"}

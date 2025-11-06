@@ -1,7 +1,6 @@
 import wollok.game.*
 import juego.*
 import sonidos.*
-import score.* 
 
 
 object interfazJuegoReal{
@@ -55,6 +54,73 @@ object setJuego{
 
     method reset(){
         game.clear()
+    }
+}
+
+object imagenesNumeros {
+  method listaImagenesNumeros() =
+   ["num0.png", "num1.png", "num2.png", "num3.png", "num4.png", "num5.png",
+    "num6.png", "num7.png", "num8.png", "num9.png"]
+
+}
+
+class Digito {
+    var property image = null 
+    var property valor = 0
+    const position
+
+    method position() = position
+
+
+    
+    method mostrar() {
+        image = imagenesNumeros.listaImagenesNumeros().get(valor)
+    }
+
+    
+    method enCero() = valor == 0
+
+    
+    method incrementar() {
+        valor += 1
+        
+        const debeLlevar = valor > 9
+        
+        if (debeLlevar) {
+            valor = 0
+        }
+        
+        self.mostrar() 
+        
+        return debeLlevar
+    }
+}
+
+object scored {
+    const x = 15
+    const y = 14
+    
+    const centena = new Digito (position = game.at(x-2, y))
+    const decena = new Digito(position=game.at(x-1, y))
+    const unidad = new Digito(position=game.at(x, y))
+
+    const digitos = [unidad, decena , centena]
+
+    method initialize() {
+        digitos.forEach({ unDigito => 
+          unDigito.mostrar() 
+          game.addVisual(unDigito)
+        })
+    }
+
+    method aumentarScore(){
+        var carry = true
+        
+        digitos.forEach({ unDigito =>
+            if (carry) {
+                carry = unDigito.incrementar()
+            }
+        })
     }
 }
 

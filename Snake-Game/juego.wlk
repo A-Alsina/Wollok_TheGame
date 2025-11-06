@@ -39,6 +39,7 @@ object manzana inherits ObjetoSuelo(position = game.at(7,9)){
     override method chocar(snake){
         snake.aumentarLongitud()
         self.posicionRandom(snake)
+        scored.aumentarScore()
         sonidoComerManzana.play()
     }
 
