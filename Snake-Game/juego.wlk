@@ -56,7 +56,23 @@ object bomba inherits ObjetoSuelo(position = game.at(game.width() - 3, game.heig
     }
 
 }
+object manzanaDorada inherits ObjetoSuelo(position = game.at(9,9)){
+    override method image() = "manzanaDorada.png"
 
+    override method chocar(snake){
+        sonidoComerManzana.play()
+        game.removeVisual(self)
+        snake.aumentarLongitud()
+        snake.aumentarLongitud()
+        snake.aumentarLongitud()
+    }
+
+    method aparecer(snake){
+        self.posicionRandom(snake)
+        game.addVisual(self)
+    }
+
+}
 
 
 
@@ -265,6 +281,7 @@ object up {
 
 }
 
+/*
 object interfazJuego{
 
     method pararJuego(){
@@ -281,9 +298,15 @@ object interfazJuego{
     })
     }
 }
-
+*/
 
 object reinicio {
     method image()= "fotoReinicio.png"
     method position() = game.at(game.xCenter()-3,game.yCenter()-2) //hardcode medio raro para orientar la imagen
+}
+
+object gameOver{
+    method image() = "gameOverGatito.png"
+    method position()=game.at(3,3)
+
 }

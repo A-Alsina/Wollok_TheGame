@@ -10,8 +10,11 @@ object interfazJuegoReal{
     
 
     game.removeTickEvent("movimiento")
+    game.removeTickEvent("bomba")
+    game.removeTickEvent("manzanaDorada")
     game.schedule(1000, {sonidoMusicaFondo.stop()})
     game. addVisual(reinicio)
+    game.addVisual(gameOver)
     //game.addVisual(score)
     keyboard.y().onPressDo({
             game.clear()
@@ -50,6 +53,7 @@ object setJuego{
 
     game.addVisual(bomba)
     game.onTick(10000,"bomba" ,{=> bomba.posicionRandom(snake) }) 
+    game.onTick(10000, "manzanaDorada", { =>manzanaDorada.aparecer(snake)})
     }
 
     method reset(){

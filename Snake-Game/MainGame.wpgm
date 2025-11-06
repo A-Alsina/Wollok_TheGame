@@ -42,7 +42,9 @@ program Inicio {
 
     // Extras:
     game.addVisual(bomba)
-    game.onTick(10000,"bomba" ,{=> bomba.posicionRandom(snake) })    
+    game.onTick(10000,"bomba" ,{=> bomba.posicionRandom(snake) })   
+
+    game.onTick(10000, "manzanaDorada", { =>manzanaDorada.aparecer(snake)})   
       
       
     })
