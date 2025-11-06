@@ -4,8 +4,8 @@ import sonidos.*
 
 program Inicio {
   game.title("Snake 1")
-  game.height(30)
-  game.width(30)
+  game.height(20)
+  game.width(20)
   game.ground("fondo1.png")
   game.addVisual(inicio)
 
