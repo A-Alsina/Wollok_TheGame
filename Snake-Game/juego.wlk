@@ -1,4 +1,5 @@
 import sonidos.*
+import interfaz.*
 
 class Pantalla{
     method image() 
@@ -50,7 +51,7 @@ object bomba inherits ObjetoSuelo(position = game.at(game.width() - 3, game.heig
 
     override method chocar(snake){
         sonidoBomba.play()
-        interfazJuego.pararJuego()
+        interfazJuegoReal.pararJuego()
     }
 
 }
@@ -64,7 +65,7 @@ class Parte {
     var property image = null
 
     method chocar(snake) { 
-        interfazJuego.pararJuego()
+        interfazJuegoReal.pararJuego()
     }
     
 
@@ -142,10 +143,10 @@ object snake{
  		
 
  		if(nuevaPosicion.x() > game.width()-1 || nuevaPosicion.y() > game.height()-1|| nuevaPosicion.x() < 0 || nuevaPosicion.y() < 0){
- 			interfazJuego.pararJuego()
+ 			interfazJuegoReal.pararJuego()
  		}
  		if ( self.longitud() > 3 and partes.any({unSegmento => unSegmento.position()==(nuevaPosicion)})){
- 			interfazJuego.pararJuego()
+ 			interfazJuegoReal.pararJuego()
  	 	}
 
  		
