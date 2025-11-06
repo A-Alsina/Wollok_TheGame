@@ -1,8 +1,17 @@
 import sonidos.*
 
-object inicio {
-    method image()= "fotoInicio.png"
+class Pantalla{
+    method image() 
     method position() = game.at(0,0)
+}
+
+
+object pantallaFinal inherits Pantalla{
+  override method image()= "graciasPorJugar.png"
+}
+
+object inicio inherits Pantalla {
+    override method image()= "fotoInicio.png"
 }
 
 class ObjetoSuelo{
@@ -262,9 +271,17 @@ object interfazJuego{
 
     game.removeTickEvent("movimiento")
     game.schedule(1000, {sonidoMusicaFondo.stop()})
-    game.schedule(2000, {game.stop()})
+    game. addVisual(reinicio)
     
+    keyboard.n().onPressDo({
+        game.addVisual(pantallaFinal)
+        game.schedule(2000, {game.stop()})
+    })
     }
 }
 
 
+object reinicio {
+    method image()= "fotoReinicio.png"
+    method position() = game.at(game.xCenter()-3,game.yCenter()-2) //hardcode medio raro para orientar la imagen
+}
