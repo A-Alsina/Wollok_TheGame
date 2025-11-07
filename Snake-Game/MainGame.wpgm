@@ -1,3 +1,4 @@
+import interfaz.*
 import wollok.game.*
 import juego.*
 import sonidos.*
@@ -11,7 +12,6 @@ program Inicio {
 
   keyboard.space().onPressDo({
     game.removeVisual(inicio)
-
     
      // MUSICA DE FONDO
     sonidoMusicaFondo.playLoop()

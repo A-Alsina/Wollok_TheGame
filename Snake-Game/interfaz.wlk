@@ -32,7 +32,7 @@ object interfazJuegoReal{
 object setJuego{
     method setInicio(){
     sonidoMusicaFondo.playLoop()
-    // Resetear lista de partes a la  configuración inicia
+
     snake.partes([ new Cabeza(position = game.at(5,5), direccion = right),
  		new Cuerpo(position = game.at(4,5), direccion = right)])
 
@@ -86,22 +86,18 @@ class Digito {
 
     
     method incrementar() {
-        valor += 1
-        
+        valor += 1  
         const debeLlevar = valor > 9
-        
         if (debeLlevar) {
             valor = 0
         }
-        
         self.mostrar() 
-        
         return debeLlevar
     }
 }
 
 object scored {
-    const x = 15
+    const x = 8
     const y = 14
     
     const centena = new Digito (position = game.at(x-2, y))
@@ -111,6 +107,7 @@ object scored {
     const digitos = [unidad, decena , centena]
 
     method initialize() {
+        game.addVisual(bordeSuperior)
         digitos.forEach({ unDigito => 
           unDigito.mostrar() 
           game.addVisual(unDigito)

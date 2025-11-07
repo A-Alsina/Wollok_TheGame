@@ -12,7 +12,12 @@ object pantallaFinal inherits Pantalla{
 }
 
 object inicio inherits Pantalla {
-    override method image()= "fotoInicio.png"
+    override method image() = "fotoInicio.png"
+}
+
+object bordeSuperior {
+    method position() = game.at(0,14)
+    method image() = "bordeSup.png"
 }
 
 class ObjetoSuelo{
@@ -22,7 +27,7 @@ class ObjetoSuelo{
     method chocar(snake)
 
     method posicionRandom(snake){
-        const a = new Position(x= 0.randomUpTo(game.width()-1).floor(), y= 0.randomUpTo(game.height()-1).floor())
+        const a = new Position(x= 0.randomUpTo(game.width()-3).floor(), y= 0.randomUpTo(game.height()-3).floor())
         if (snake.partes().any({c => (c.position().x() == a.x() && c.position().y() == a.y()) }))  {
             self.posicionRandom(snake)       
         }
@@ -42,8 +47,6 @@ object manzana inherits ObjetoSuelo(position = game.at(7,9)){
         scored.aumentarScore()
         sonidoComerManzana.play()
     }
-
-
 
 }
 
@@ -65,6 +68,10 @@ object manzanaDorada inherits ObjetoSuelo(position = game.at(9,9)){
         snake.aumentarLongitud()
         snake.aumentarLongitud()
         snake.aumentarLongitud()
+        
+        scored.aumentarScore()
+        scored.aumentarScore()
+        scored.aumentarScore()
     }
 
     method aparecer(snake){
@@ -159,7 +166,7 @@ object snake{
  	method move(nuevaPosicion, nuevaDireccion){
  		
 
- 		if(nuevaPosicion.x() > game.width()-1 || nuevaPosicion.y() > game.height()-1|| nuevaPosicion.x() < 0 || nuevaPosicion.y() < 0){
+ 		if(nuevaPosicion.x() > game.width()-1 || nuevaPosicion.y() > game.height()-3|| nuevaPosicion.x() < 0 || nuevaPosicion.y() < 0){
  			interfazJuegoReal.pararJuego()
  		}
  		if ( self.longitud() > 3 and partes.any({unSegmento => unSegmento.position()==(nuevaPosicion)})){
@@ -281,28 +288,9 @@ object up {
 
 }
 
-/*
-object interfazJuego{
-
-    method pararJuego(){
-    game.schedule(500, {sonidoGameOver.play()})
-    
-
-    game.removeTickEvent("movimiento")
-    game.schedule(1000, {sonidoMusicaFondo.stop()})
-    game. addVisual(reinicio)
-    
-    keyboard.n().onPressDo({
-        game.addVisual(pantallaFinal)
-        game.schedule(2000, {game.stop()})
-    })
-    }
-}
-*/
-
 object reinicio {
     method image()= "fotoReinicio.png"
-    method position() = game.at(game.xCenter()-3,game.yCenter()-2) //hardcode medio raro para orientar la imagen
+    method position() = game.at(game.xCenter()-3,game.yCenter()-2) 
 }
 
 object gameOver{
